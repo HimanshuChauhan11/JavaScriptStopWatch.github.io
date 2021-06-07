@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch | JavaScript</title>
+
+    <!-- ============ Libraries Files, Start ============ -->
+    <link rel="stylesheet" href="libs/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/css/fontawesome-all.css">
+    <!-- ============ Labraries Files, End ============ -->
+
+    <!-- ============ CSS Stylesheet ============ -->
+    <link rel="stylesheet" href="libs/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card ">
+            <div class="card-header">
+                <h1 class="heading">StopWatch</h1>
+            </div>
+            <div class="card-body">
+                <div class="stopWatch">
+                    <div class="timer">
+                        <h1><span id="hours">00</span>:<span id="min">00</span>: <span id="sec">00</span></h1>
+                    </div>
+                    <div class="buttons text-center">
+                        <div class="start ">
+                            <button class="btn btn-outline-success btn-lg" id="start">Start</button>
+                        </div>
+                        <div class="lap ">
+                            <button class="btn btn-outline-primary btn-lg" id="lap">Lap</button>
+                        </div>
+                        <div class="stop  ">
+                            <button class="btn btn-outline-danger btn-lg" id="stop">Stop</button>
+                        </div>
+                        <div class="stop  ">
+                            <button class="btn btn-outline-warning btn-lg" id="reset">Reset</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div>
+            <ul class="list-group" id="lapList">
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; All Rights Reserved | <span id="year"></span></p>
+    </footer>
+
+    <script>
+        let year = new Date().getFullYear();
+        let copy = document.getElementById("year").innerHTML = year;
+    </script>
+    <!-- =============== Libraries Scripts, Start =============== -->
+    <script src="libs/js/jquery.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
+    <!-- ===============   Libraries Scripts, End =============== -->
+
+    <!-- =============== Js Main File =============== -->
+    <script src="libs/js/main.js"></script>
+</body>
+
+</html>
