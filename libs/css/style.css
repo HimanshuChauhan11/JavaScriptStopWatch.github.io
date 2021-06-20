@@ -3,29 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   height: 100vh;
   font-size: 1rem;
   color: #000;
-  font-family: sans-serif;
-  background: rgb(156, 22, 22);
-  background: linear-gradient(
-    62deg,
-    rgba(156, 22, 22, 1) 0%,
-    rgba(23, 142, 176, 1) 100%
-  );
+  font-family: "Bitter", serif;
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.container {
+  width: 90%;
+}
 .heading {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
 .card {
-  margin: 150px auto;
   color: #fff;
-  background-color: transparent;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 .card-body {
   background-color: rgb(0, 0, 0, 0.5);
@@ -50,7 +55,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .card-body h1 {
-    font-size: 75px;
+    font-size: 60px;
   }
   .card-body .start,
   .lap,
@@ -63,7 +68,8 @@ body {
     font-size: 32px;
   }
 }
-footer {
-  color: #fff;
-  text-align: center;
+@media screen and (max-width: 418px) {
+  .card-body h1 {
+    font-size: 50px;
+  }
 }
