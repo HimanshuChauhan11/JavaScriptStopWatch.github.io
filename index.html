@@ -10,6 +10,8 @@
     <!-- ============ Libraries Files, Start ============ -->
     <link rel="stylesheet" href="libs/css/bootstrap.css">
     <link rel="stylesheet" href="libs/css/fontawesome-all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- ============ Labraries Files, End ============ -->
 
     <!-- ============ CSS Stylesheet ============ -->
@@ -27,7 +29,7 @@
             <div class="card-body">
                 <div class="stopWatch">
                     <div class="timer">
-                        <h1><span id="hours">00</span>:<span id="min">00</span>: <span id="sec">00</span></h1>
+                        <h1><span id="hours">00</span> : <span id="min">00</span> : <span id="sec">00</span></h1>
                     </div>
                     <div class="buttons text-center">
                         <div class="start ">
@@ -56,17 +58,6 @@
             </ul>
         </div>
     </div>
-
-
-
-    <footer>
-        <p>&copy; All Rights Reserved | <span id="year"></span></p>
-    </footer>
-
-    <script>
-        let year = new Date().getFullYear();
-        let copy = document.getElementById("year").innerHTML = year;
-    </script>
     <!-- =============== Libraries Scripts, Start =============== -->
     <script src="libs/js/jquery.min.js"></script>
     <script src="libs/js/bootstrap.min.js"></script>
