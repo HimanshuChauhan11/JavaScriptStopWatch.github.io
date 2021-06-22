@@ -74,5 +74,6 @@ reset.addEventListener("click", () => {
   minutes.innerHTML = "00";
   second.innerHTML = "00";
   hours.innerHTML = "00";
+  lapList.parentNode.removeChild(lapList);
   clearInterval(Interval);
 });
