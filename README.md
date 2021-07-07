@@ -1,13 +1,11 @@
-# Simple JavaScript StopWatch
+# **Simple JavaScript StopWatch**
 
-# Info
-
-- Simple StopWatch Using JavaScript
+## Info
+ ``
+ const StopWatch = () => "JavaScript Stop Watch!"
+ ``
 
 ## Github Pages Link
-
-==============================================================
-
+## ===========================================
 ### https://himanshuchauhan11.github.io/JavaScriptStopWatch.github.io/
-
-==============================================================
+## ===========================================
